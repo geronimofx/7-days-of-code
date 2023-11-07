@@ -29,6 +29,7 @@ btnEnviar.addEventListener('click', (e) => {
     document.getElementById('bankai').appendChild(input)
 
     input.addEventListener('focusout', (e) => {
+        removeRespostaFinal();
         var valorResposta = e.target.value;
         var respostaFinal = document.createElement('p');
 
@@ -39,7 +40,13 @@ btnEnviar.addEventListener('click', (e) => {
             respostaFinal.textContent = 'Ahh que pena... Já tentou aprender outras linguagens?';
             document.getElementById('bankai').appendChild(respostaFinal)
         }
-
     })
+
+    function removeRespostaFinal() {
+        var respostaFinalExistente = document.querySelector('#bankai p')
+        if (respostaFinalExistente) {
+            document.getElementById('bankai').removeChild(respostaFinalExistente)
+        }
+    }
 
 })

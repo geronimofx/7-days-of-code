@@ -39,3 +39,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
 }
+
+#bankai, p {
+    width: 350px;
+}
