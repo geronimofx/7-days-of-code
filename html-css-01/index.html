@@ -1,33 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptimusTech</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="navbar-container">
-        <div class="icon-nav">
-            <img src="./images/optimusTech.png" alt="logo da optimus tech">
-            <p>OptimusTech</p>
-        </div>
-        <nav class="menu-nav">
-            <ul>
-                <li>Home</li>
-                <li>Produtos</li>
-                <li>Recursos</li>
-                <li>Sobre nós</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OptimusTech</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Day #01 -->
+        <nav class="navbar-container">
+            <div>
+                <a href="#" class="icon-nav">
+                    <img
+                        src="./images/optimusTech.png"
+                        alt="logo da optimus tech"
+                    />
+                    <p>OptimusTech</p>
+                </a>
+            </div>
+            <ul class="menu-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                <li>
+                    <a href="#">Recursos</a>
+                </li>
+                <li>
+                    <a href="#cabecalho">Sobre nós</a>
+                </li>
             </ul>
+            <div class="btn-nav">
+                <button class="btn-login">Entrar</button>
+                <button class="btn-cadastro">Cadastrar</button>
+            </div>
         </nav>
-        <div class="btn-nav">
-            <button class="btn-login">Entrar</button>
-            <button class="btn-cadastro">Cadastrar</button>
-        </div>
-    </div>
-</body>
+
+        <!-- Day #02 -->
+        <section id="cabecalho" class="cabecalho">
+            <span>Sobre nós</span>
+            <h1>Por que somos diferentes?</h1>
+            <p>
+                Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar
+                as empresas de todo o mundo a se concentrarem naquilo que é
+                realmente importante para elas.
+            </p>
+        </section>
+
+        <!-- Day #03 -->
+        <section class="metricas-container">
+            <div class="metricas">
+                <h3 class="metricas-title">400+</h3>
+                <p>Projetos concluídos</p>
+                <span>Nós ajudamos a construir mais de 400 projetos incríveis.</span>
+            </div>
+            <div class="metricas">
+                <h3 class="metricas-title">100+</h3>
+                <p>Colaboradores</p>
+                <span>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</span>
+            </div>
+            <div class="metricas">
+                <h3 class="metricas-title">20k+</h3>
+                <p>Downloads</p>
+                <span>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</span>
+            </div>
+            <div class="metricas">
+                <h3 class="metricas-title">500+</h3>
+                <p>Reviews 5 estrelas</p>
+                <span>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</span>
+            </div>
+        </section>
+    </body>
 </html>
