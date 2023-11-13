@@ -186,3 +186,47 @@
     text-align: left;
     color: #667085;
 }
+
+/* day #04 */
+.vagas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 96px 32px 64px 32px;
+}
+
+.vagas-container .vagas-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vagas-container .vagas-text p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #8E2424;
+    margin-bottom: 16px;
+}
+
+.vagas-container .vagas-text h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #101828;
+    margin-bottom: 20px;
+}
+
+.vagas-container .vagas-text span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #667085;
+}
