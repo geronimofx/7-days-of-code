@@ -188,7 +188,7 @@
 }
 
 /* day #04 */
-.vagas-container {
+.talentos-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,13 +196,13 @@
     padding: 96px 32px 64px 32px;
 }
 
-.vagas-container .vagas-text {
+.talentos-container .talentos-text {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.vagas-container .vagas-text p {
+.talentos-container .talentos-text p {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -212,7 +212,7 @@
     margin-bottom: 16px;
 }
 
-.vagas-container .vagas-text h3 {
+.talentos-container .talentos-text h3 {
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
@@ -222,11 +222,67 @@
     margin-bottom: 20px;
 }
 
-.vagas-container .vagas-text span {
+.talentos-container .talentos-text span {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
     color: #667085;
+}
+
+/* Day #05 */
+
+.vagas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 256px 96px;
+    gap: 64px;
+}
+
+.vagas-container .vagas-title {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.vagas-container .vagas-title h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101828;
+}
+
+.vagas-container .vagas-title .vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 24px;
+}
+
+.vagas-container .vagas-title .vagas p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101828;
+}
+
+.vagas-container .vagas-title .vagas span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667085;
+}
+
+.vagas-container .vagas-title .vagas span:first-child {
+    margin-right: 24px;
 }
