@@ -232,7 +232,6 @@
 }
 
 /* Day #05 */
-
 .vagas-container {
     display: flex;
     flex-direction: column;
@@ -262,7 +261,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-left: 24px;
+    margin: 0 0 46px 24px;
 }
 
 .vagas-container .vagas-title .vagas p {
@@ -285,4 +284,48 @@
 
 .vagas-container .vagas-title .vagas span:first-child {
     margin-right: 24px;
+}
+
+/* Day #06 */
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+    margin-bottom: 96px;
+}
+
+.depoimentos p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #8E2424;
+    margin-bottom: 16px;
+}
+
+.depoimentos h3 {
+    width: 1088px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #101828;
+}
+
+.depoimentos .depoimentos-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.depoimentos .depoimentos-profile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    gap: 4px;
 }
