@@ -29,6 +29,10 @@ Cada seção recebeu atenção em um dia específico, permitindo uma abordagem s
 
 ## Como Visualizar o Projeto
 
+Acesse o link: https://7-days-of-code-eta.vercel.app/
+
+ou
+
 Clone o repositório e abra o arquivo `index.html` no seu navegador preferido.
 
 ```bash
