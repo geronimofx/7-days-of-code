@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
     </head>
-    <body class="container">
+    <body>
         <!-- Day #01 -->
         <nav class="navbar-container">
             <div>
@@ -43,6 +43,24 @@
             <div class="btn-nav">
                 <button class="btn-login">Entrar</button>
                 <button class="btn-cadastro">Cadastrar</button>
+            </div>
+
+            <!-- Menu sanduíche para telas menores -->
+            <div class="nav-mobile">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícone do menu sanduíche -->
+                <div class="menu-content">
+                    <ul class="menu-mobile">
+                        <!-- Conteúdo do menu para telas menores -->
+                        <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#" onclick="toggleMenu()">Produtos</a></li>
+                        <li><a href="#" onclick="toggleMenu()">Recursos</a></li>
+                        <li><a href="#cabecalho" onclick="toggleMenu()">Sobre nós</a></li>
+                    </ul>
+                    <div class="btn-mobile">
+                        <button class="btn-login" onclick="toggleMenu()">Entrar</button>
+                        <button class="btn-cadastro" onclick="toggleMenu()">Cadastrar</button>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -159,5 +177,12 @@
             </form>
             <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
         </section>
+
+        <script>
+            function toggleMenu() {
+                var menuContent = document.querySelector('.nav-mobile .menu-content');
+                menuContent.classList.toggle('show');
+            }
+        </script>
     </body>
 </html>

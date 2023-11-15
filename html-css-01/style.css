@@ -1,10 +1,9 @@
 * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
-body {
+/* body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +11,8 @@ body {
 
 .container {
     width: 1440px;
-    margin: 0 auto; /* Isso centralizará a div com a largura especificada */
-}
+    margin: 0 auto;
+} */
 
 /* Day #01 */
 .navbar-container {
@@ -26,10 +25,14 @@ body {
     margin-top: 36px;
 }
 
+.navbar-container .nav-mobile {
+    display: none;
+}
+
 .icon-nav {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
     width: 148px;
     text-decoration: none;
 }
@@ -415,4 +418,71 @@ body {
     letter-spacing: 0em;
     text-align: left;
     color: #98A2B3;
+}
+
+@media (max-width: 1280px) {
+    .menu-nav {
+        margin-right: 0;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .talentos-container img {
+        width: 950px;
+    }
+
+    .vagas-container {
+        width: 950px;
+    }
+
+    .depoimentos {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .depoimentos h3 {
+        width: 950px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-container .menu-nav,
+    .navbar-container .btn-nav {
+        display: none; /* Esconde o menu de navegação e os botões para telas menores */
+    }
+
+    .navbar-container .nav-mobile {
+        display: flex;
+        justify-content: space-between; /* Alinha os itens horizontalmente */
+        align-items: center; /* Alinha os itens verticalmente */
+        padding: 10px; /* Adiciona um espaçamento interno */
+        background-color: #333; /* Cor de fundo do menu sanduíche */
+        color: white; /* Cor do texto do menu sanduíche */
+    }
+
+    .navbar-container .menu-icon {
+        cursor: pointer;
+        font-size: 24px; /* Tamanho do ícone do menu sanduíche */
+    }
+
+    .navbar-container .menu-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-container .menu-content.show {
+        display: flex;
+    }
+
+    .navbar-container .menu-mobile li {
+        padding: 15px;
+    }
+
+    .navbar-container .btn-mobile {
+        text-align: center;
+        margin-top: 10px;
+    }
 }
